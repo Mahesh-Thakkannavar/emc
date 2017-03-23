@@ -1,0 +1,11 @@
+user {'tux':
+  ensure     => 'present',
+  managehome => 'true',
+  password   => 'Password01',
+}
+  
+  ssh_authorized_key {'tux@centos7':
+  user   => 'tux',
+  type   => 'ssh-rsa',
+  key    => 'sdjkjsdlskdslkjdlslkjd',
+}
